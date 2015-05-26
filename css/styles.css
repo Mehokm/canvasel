@@ -1,0 +1,81 @@
+.carousel-track {
+	display: inline-block;
+}
+
+.carousel-track ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.carousel-track ul > li {
+	display: table-cell;
+  	vertical-align: top;
+}
+
+.carousel-backward {
+	margin-right: 4px;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2213%22%20height%3D%2250%22%3E%3Cpath%20fill%3D%22%23999%22%20d%3D%22M2 24.5L12.4 0h-2L0 24.5l11.2 25.2h2%22/%3E%3C/svg%3E');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+}
+
+.carousel-forward {
+	margin-left: 5px;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2213%22%20height%3D%2250%22%3E%3Cpath%20fill%3D%22%23999%22%20d%3D%22M11.2 25.2L.8 49.6v.1h1.9l10.5-24.5L2 0H0%22/%3E%3C/svg%3E');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent;
+}
+
+.carousel-backward, .carousel-forward {
+	height: 100%; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	border: 0;
+	cursor: pointer;
+}
+.carousel-forward:hover,
+.carousel-forward:active,
+.carousel-forward:focus {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2213%22%20height%3D%2250%22%3E%3Cpath%20fill%3D%22%2333%22%20d%3D%22M11.2 25.2L.8 49.6v.1h1.9l10.5-24.5L2 0H0%22/%3E%3C/svg%3E');
+}
+
+.carousel-backward:hover,
+.carousel-backward:active,
+.carousel-backward:focus {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2213%22%20height%3D%2250%22%3E%3Cpath%20fill%3D%22%2333%22%20d%3D%22M2 24.5L12.4 0h-2L0 24.5l11.2 25.2h2%22/%3E%3C/svg%3E');
+}
+.carousel-backward:focus, .carousel-forward:focus,
+.carousel-backward:active, .carousel-forward:active {
+	outline: #ccc 1px dotted;
+}
+
+.pagination {
+	text-align: center;
+}
+
+.pagination li {
+	display: inline-block !important;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.pagination li:before {
+	content: '\2B24';
+	padding: 10px;
+	line-height: 20px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 6px;
+	color: #999;
+}
+.pagination li:hover:before,
+.pagination li:hover:active,
+.pagination li:hover:focus {
+	color: #333;
+}
+
+.pagination .carousel-index-selected:before {
+	color: red;
+}
